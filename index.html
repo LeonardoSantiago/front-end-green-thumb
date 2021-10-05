@@ -12,6 +12,60 @@
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <div class="principal-container">
+      <div id="header" class="header-image">
+        <div class="header-text">
+          <img src="./images/icons/logo-white.svg"/>
+          <span>Find your next green friend </span>
+          <img src="./images/icons/arrow-down.svg"/> 
+        </div>
+      </div>
+      <div class="container-filters">
+        <div class="filter">
+          <img src="./images/illustrations/sun.png"/>
+          <label> <strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.</label>
+          <select id="sun">
+            <option selected="selected"> Select...</option>
+            <option value="no"> None </option>
+            <option value="low"> Low </option>
+            <option value="high"> High </option>
+          </select>
+        </div>
+        <div class="filter">
+          <img src="./images/illustrations/wateringcan.png"/>
+          <label> <strong>2.</strong> How often do you want to <strong>water</strong> your plant?</label>
+          <select  id="water">
+            <option selected="selected"> Select...</option>
+            <option value="regularly"> Regularly </option>
+            <option value="daily"> Daily </option>
+            <option value="rarely"> Rarely </option>
+          </select>
+        </div>
+        <div class="filter">
+          <img src="./images/illustrations/dog.png"/>
+          <label> <strong>3.</strong> Do you have pets? Do they <strong> chew </strong>plants?</label>
+          <select  id="pets">
+            <option selected="selected"> Select...</option>
+            <option value=true> Yes </option>
+            <option value=false> No </option>
+          </select>
+        </div>
+      </div>
+      <div id="container-no-results" class="no-results">
+        <div>
+          <h1> No results yet...</h1>
+          <h4> Use the filters above to find the plant that best fits your environment :)  </h4>
+        </div>
+        <img src="./images/illustrations/no-results.png"/> 
+      </div>
+      <div id="container-results" class="container-results">
+        <img class="title-img" src="./images/illustrations/pick.png"/>
+        <span class="title">Our picks for you </span>
+        <div id="result" class="content-result">
+        </div>
+          <button id="back-top"> Back to Top </button>
+        </div>
+    </div>
   </body>
+  <script src="main.js"></script>
 </html>
